@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三角洲行动 - 特情处升级计算器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>三角洲行动 - 特情处升级计算器</h1>
+            <p>输入各设施目标等级，计算所需物品</p>
+        </header>
+
+        <div class="facilities-grid">
+            <div class="facility-card">
+                <h3>仓库</h3>
+                <div class="level-inputs">
+                    <div class="level-group">
+                        <label for="warehouse-current">当前等级:</label>
+                        <input type="number" id="warehouse-current" min="1" max="10" value="1">
+                    </div>
+                    <div class="level-group">
+                        <label for="warehouse-target">目标等级:</label>
+                        <select id="warehouse-target">
+                            <option value="2">2级</option>
+                            <option value="3">3级</option>
+                            <option value="4">4级</option>
+                            <option value="5">5级</option>
+                            <option value="6">6级</option>
+                            <option value="7">7级</option>
+                            <option value="8">8级</option>
+                            <option value="9">9级</option>
+                            <option value="10" selected>10级</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="facility-card">
+                <h3>指挥中心</h3>
+                <div class="level-inputs">
+                    <div class="level-group">
+                        <label for="command-current">当前等级:</label>
+                        <input type="number" id="command-current" min="1" max="6" value="1">
+                    </div>
+                    <div class="level-group">
+                        <label for="command-target">目标等级:</label>
+                        <select id="command-target">
+                            <option value="2">2级</option>
+                            <option value="3">3级</option>
+                            <option value="4">4级</option>
+                            <option value="5">5级</option>
+                            <option value="6" selected>6级</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="facility-card">
+                <h3>工作台</h3>
+                <div class="level-inputs">
+                    <div class="level-group">
+                        <label for="workbench-current">当前等级:</label>
+                        <input type="number" id="workbench-current" min="0" max="3" value="0">
+                    </div>
+                    <div class="level-group">
+                        <label for="workbench-target">目标等级:</label>
+                        <select id="workbench-target">
+                            <option value="1">1级</option>
+                            <option value="2">2级</option>
+                            <option value="3" selected>3级</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="facility-card">
+                <h3>技术中心</h3>
+                <div class="level-inputs">
+                    <div class="level-group">
+                        <label for="tech-current">当前等级:</label>
+                        <input type="number" id="tech-current" min="0" max="3" value="0">
+                    </div>
+                    <div class="level-group">
+                        <label for="tech-target">目标等级:</label>
+                        <select id="tech-target">
+                            <option value="1">1级</option>
+                            <option value="2">2级</option>
+                            <option value="3" selected>3级</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="facility-card">
+                <h3>靶场</h3>
+                <div class="level-inputs">
+                    <div class="level-group">
+                        <label for="range-current">当前等级:</label>
+                        <input type="number" id="range-current" min="0" max="7" value="0">
+                    </div>
+                    <div class="level-group">
+                        <label for="range-target">目标等级:</label>
+                        <select id="range-target">
+                            <option value="1">1级</option>
+                            <option value="2">2级</option>
+                            <option value="3">3级</option>
+                            <option value="4">4级</option>
+                            <option value="5">5级</option>
+                            <option value="6">6级</option>
+                            <option value="7" selected>7级</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="facility-card">
+                <h3>训练中心</h3>
+                <div class="level-inputs">
+                    <div class="level-group">
+                        <label for="training-current">当前等级:</label>
+                        <input type="number" id="training-current" min="0" max="7" value="0">
+                    </div>
+                    <div class="level-group">
+                        <label for="training-target">目标等级:</label>
+                        <select id="training-target">
+                            <option value="1">1级</option>
+                            <option value="2">2级</option>
+                            <option value="3">3级</option>
+                            <option value="4">4级</option>
+                            <option value="5">5级</option>
+                            <option value="6">6级</option>
+                            <option value="7" selected>7级</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="facility-card">
+                <h3>制药台</h3>
+                <div class="level-inputs">
+                    <div class="level-group">
+                        <label for="pharmacy-current">当前等级:</label>
+                        <input type="number" id="pharmacy-current" min="0" max="3" value="0">
+                    </div>
+                    <div class="level-group">
+                        <label for="pharmacy-target">目标等级:</label>
+                        <select id="pharmacy-target">
+                            <option value="1">1级</option>
+                            <option value="2">2级</option>
+                            <option value="3" selected>3级</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="facility-card">
+                <h3>防具台</h3>
+                <div class="level-inputs">
+                    <div class="level-group">
+                        <label for="armor-current">当前等级:</label>
+                        <input type="number" id="armor-current" min="0" max="3" value="0">
+                    </div>
+                    <div class="level-group">
+                        <label for="armor-target">目标等级:</label>
+                        <select id="armor-target">
+                            <option value="1">1级</option>
+                            <option value="2">2级</option>
+                            <option value="3" selected>3级</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="calculate-section">
+            <button id="calculateBtn" onclick="calculateMaterials()">计算所需物品</button>
+            <button id="clearBtn" onclick="clearAll()">清空</button>
+        </div>
+
+        <div class="results-section">
+            <div class="summary">
+                <h3>总计费用</h3>
+                <div class="cost-summary">
+                    <div class="cost-item">
+                        <span>哈夫币:</span>
+                        <span id="totalCoins">0</span>
+                    </div>
+                    <div class="cost-item">
+                        <span>材料价值:</span>
+                        <span id="totalMaterials">0</span>
+                    </div>
+                    <div class="cost-item total">
+                        <span>总花费:</span>
+                        <span id="totalCost">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="materials-list">
+                <h3>所需物品清单</h3>
+                <div id="materialsList"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
